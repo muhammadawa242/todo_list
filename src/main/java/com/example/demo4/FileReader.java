@@ -13,6 +13,7 @@ public class FileReader {
         {
             // Get connection with database
             Class.forName("org.sqlite.JDBC");
+            System.out.println("yes\n\n");
             Connection c = DriverManager.getConnection("jdbc:sqlite:E:\\repos\\repos_Java\\demo4\\src\\main\\java\\com\\example\\demo4\\todos.db");
             Statement stmt = c.createStatement();
 
